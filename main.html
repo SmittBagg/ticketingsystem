@@ -9,6 +9,8 @@
 
 <style>
     table {
+        background-color: bisque;
+        table-layout: fixed;
         border: 1px solid black;
         border-radius: 10px;
         border-collapse: separate; 
@@ -22,13 +24,27 @@
         border-bottom: 1px solid black;
     }
 
-    /* removes bottom border from last row */
-    tr:last-child td {
-        border-bottom: none !important;
-    }
-
     button {
         margin-bottom: 25px;
+        color: white;
+        padding: 10px 32px;
+        font-size: 16px;
+        background-color: #d40f0f;
+        cursor: pointer;
+        border-radius: 25px;
+        border-width: 1px solid black;
+    }
+
+    /* ticket ID header and cells fixed width */
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 100px;
+    }
+
+    /* Issue header and cells fixed width */
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 250px;
     }
 
 </style>
@@ -44,9 +60,9 @@
 
     <table>
         <tr>
-            <th style="text-align: left; padding-right: 100px;">Ticket ID</th>
-            <th style="text-align: left;">Issue</th>
-            <th style="text-align: left;">Status</th>
+            <th>Ticket ID</th>
+            <th>Issue</th>
+            <th>Status</th>
         </tr>
         <tr>
             <td>1</td>
