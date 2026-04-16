@@ -1,0 +1,51 @@
+/* style sheet */
+
+.table {
+    background-color: bisque;
+    table-layout: fixed;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-collapse: separate; 
+    border-spacing: 0;         
+    overflow: hidden;
+}
+
+.th, .td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.button {
+    margin-bottom: 25px;
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+    background-color: #d40f0f;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+/* ticket ID header and cells fixed width */
+.th:nth-child(1),
+.td:nth-child(1) {
+    width: 100px;
+}
+
+/* Issue header and cells fixed width */
+.th:nth-child(2),
+.td:nth-child(2) {
+    width: 250px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+    
+.th:nth-child(3),
+.td:nth-child(3) {
+    width: 75px;
+}
+
+.body {
+    Margin: 25px;
+}
