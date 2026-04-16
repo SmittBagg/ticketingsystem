@@ -49,3 +49,39 @@
 .body {
     Margin: 25px;
 }
+
+.popup {
+    /* display: none; */
+    position: fixed;                     /*centers*/
+    top: 50%;                           /*the*/
+    left: 50%;                         /*popup*/
+    transform: translate(-50%, -50%); /*onscreen*/
+    background-color: white;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    z-index: 1000;      /*makes sure popup is on top*/
+    text-align: center;
+}
+
+.submitbutton {
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+    background-color: #d40f0f;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box; /* ensures padding doesn't affect total width */
+}
