@@ -56,6 +56,7 @@
     top: 50%;                           /*the*/
     left: 50%;                         /*popup*/
     transform: translate(-50%, -50%); /*onscreen*/
+    -ms-transform: translate(-50%,-50%);
     background-color: white;
     padding: 30px;
     border: 2px solid black;
